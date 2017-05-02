@@ -1,3 +1,4 @@
+require "active_support/core_ext/date"
 require "virtus"
 
 require "abokifx_indexer/version"

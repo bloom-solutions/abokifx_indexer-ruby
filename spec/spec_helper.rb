@@ -1,6 +1,7 @@
 require "pry"
 require "rspec"
 require "virtus/matchers/rspec"
+require "timecop"
 require "bundler/setup"
 require "abokifx_indexer"
 

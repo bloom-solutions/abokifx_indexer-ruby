@@ -10,7 +10,7 @@ module AbokiFXIndexer
     private
 
     def default_date
-      DateTime.today
+      DateTime.now
     end
 
   end
