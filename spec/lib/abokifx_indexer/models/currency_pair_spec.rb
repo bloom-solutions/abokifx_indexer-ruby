@@ -21,20 +21,8 @@ module AbokiFXIndexer
       it { is_expected.to have_attribute(:counter_currency, String) }
       it { is_expected.to have_attribute(:buy_rate, Float) }
       it { is_expected.to have_attribute(:sell_rate, Float) }
-      it { is_expected.to have_attribute(:read_on, DateTime) }
+      it { is_expected.to have_attribute(:post_date, DateTime) }
     end
-
-    describe "#read_on" do
-      before { Timecop.freeze(2017, 04, 27) }
-      after { Timecop.return }
-
-      let(:currency_pair) { described_class.new }
-
-      it "gives a default date of today" do
-        expect(currency_pair.read_on).to eq DateTime.now
-      end
-    end
-
   end
 end
 
