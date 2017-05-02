@@ -18,13 +18,13 @@ And then execute:
 
 Or install it yourself as:
 
-    $ gem install abokifx_indexer-ruby
+    $ gem install abokifx_indexer
 
 ## Usage
 
 ```
-indexer = AbokiFXIndexer.new
-indexer.get_latest_parallel_market_rates
+indexer = AbokiFXIndexer.new(base_url: "https://abokifx.com")
+indexer.get_latest_ngn_rates
 ```
 
 

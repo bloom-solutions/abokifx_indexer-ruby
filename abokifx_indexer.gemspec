@@ -4,13 +4,13 @@ $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 require 'abokifx_indexer/version'
 
 Gem::Specification.new do |spec|
-  spec.name          = "abokifx_indexer-ruby"
+  spec.name          = "abokifx_indexer"
   spec.version       = AbokiFXIndexer::VERSION
   spec.authors       = ["Ace Subido"]
   spec.email         = ["ace.subido@gmail.com"]
 
-  spec.summary       = %q{Ruby Wrapper to get latest rates from abokifx.com}
-  spec.description   = %q{Ruby Wrapper to get latest rates from abokifx.com}
+  spec.summary       = %q{Ruby Wrapper to get NGN rates from abokifx.com}
+  spec.description   = %q{Ruby Wrapper to get NGN rates from abokifx.com}
   spec.homepage      = "http://github.com/imachiatto/abokifx_indexer-ruby"
 
   # Prevent pushing this gem to RubyGems.org. To allow pushes either set the 'allowed_push_host'
