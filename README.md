@@ -9,7 +9,7 @@ TODO: Delete this and the text above, and describe your gem
 Add this line to your application's Gemfile:
 
 ```ruby
-gem 'abokifx_indexer-ruby'
+gem 'abokifx_indexer'
 ```
 
 And then execute:
@@ -27,6 +27,10 @@ indexer = AbokiFXIndexer.new(base_url: "https://abokifx.com")
 indexer.get_latest_ngn_rates
 ```
 
+## Roadmap
+
+- `.get_latest_ngn_rates` should also return those from other parallel markets (XOF, XAF and GHS)
+- `.get_historical_ngn_rates` should return rates for the past month
 
 ## Development
 
