@@ -14,14 +14,15 @@ module AbokiFXIndexer
           counter_currency: "USD",
           buy_rate: 385,
           sell_rate: 390,
-          read_on: DateTime.new(2017, 04, 27),
+          read_on: Date.new(2017, 04, 27),
         })
       end
       it { is_expected.to have_attribute(:base_currency, String) }
       it { is_expected.to have_attribute(:counter_currency, String) }
       it { is_expected.to have_attribute(:buy_rate, Float) }
       it { is_expected.to have_attribute(:sell_rate, Float) }
-      it { is_expected.to have_attribute(:post_date, DateTime) }
+      it { is_expected.to have_attribute(:post_date, Date) }
+      it { is_expected.to have_attribute(:fetched_at, DateTime) }
     end
   end
 end

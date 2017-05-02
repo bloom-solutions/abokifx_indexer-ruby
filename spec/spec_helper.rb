@@ -2,6 +2,7 @@ require "pry"
 require "rspec"
 require "virtus/matchers/rspec"
 require "timecop"
+require "pathname"
 require "bundler/setup"
 require "abokifx_indexer"
 
@@ -13,3 +14,7 @@ RSpec.configure do |config|
     c.syntax = :expect
   end
 end
+
+SPEC_DIR = Pathname.new(File.dirname(__FILE__))
+FIXTURES_DIR = SPEC_DIR.join("fixtures")
+Dir[SPEC_DIR.join("support", "*.rb")].each {|f| require f}
