@@ -22,7 +22,11 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+```
+indexer = AbokiFXIndexer.new
+indexer.get_latest_parallel_market_rates
+```
+
 
 ## Development
 
