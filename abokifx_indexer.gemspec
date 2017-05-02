@@ -11,7 +11,7 @@ Gem::Specification.new do |spec|
 
   spec.summary       = %q{Ruby Wrapper to get NGN rates from abokifx.com}
   spec.description   = %q{Ruby Wrapper to get NGN rates from abokifx.com}
-  spec.homepage      = "http://github.com/imachiatto/abokifx_indexer-ruby"
+  spec.homepage      = "https://github.com/imacchiato/abokifx_indexer-ruby"
 
   # Prevent pushing this gem to RubyGems.org. To allow pushes either set the 'allowed_push_host'
   # to allow pushing to a single host or delete this section to allow pushing to any host.
