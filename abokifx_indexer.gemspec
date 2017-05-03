@@ -32,7 +32,7 @@ Gem::Specification.new do |spec|
   spec.add_dependency "activesupport", "~> 4.2"
   spec.add_dependency "virtus", ">= 1.0"
   spec.add_dependency "gem_config", "0.3.1"
-  spec.add_dependency "nokogiri", "1.6"
+  spec.add_dependency "nokogiri", "~> 1.7"
   spec.add_dependency "typhoeus", "~> 1.1"
 
   spec.add_development_dependency "bundler", "~> 1.14"
