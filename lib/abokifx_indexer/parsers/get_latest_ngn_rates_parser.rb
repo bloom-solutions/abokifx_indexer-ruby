@@ -13,8 +13,8 @@ module AbokiFXIndexer
         CurrencyPair.new(
           base_currency: "NGN",
           counter_currency: currency,
-          buy_rate: buy_sell_rate[:buy_rate],
-          sell_rate: buy_sell_rate[:sell_rate],
+          buy_rate: 1.0 / buy_sell_rate[:buy_rate],
+          sell_rate: 1.0 / buy_sell_rate[:sell_rate],
           post_date: Date.strptime(post_date, "%d/%m/%Y"),
         )
       end
@@ -31,7 +31,10 @@ module AbokiFXIndexer
               when "EUR"
                 latest_row.search("td")[3].text
               end
-      { buy_rate: rates.split("/")[0].to_f, sell_rate: rates.split("/")[1].to_f }
+      {
+        buy_rate: BigDecimal.new(rates.split("/")[0]),
+        sell_rate: BigDecimal.new(rates.split("/")[1]),
+      }
     end
 
     def base_target_css_classes

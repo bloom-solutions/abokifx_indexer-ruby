@@ -19,8 +19,8 @@ module AbokiFXIndexer
       end
       it { is_expected.to have_attribute(:base_currency, String) }
       it { is_expected.to have_attribute(:counter_currency, String) }
-      it { is_expected.to have_attribute(:buy_rate, Float) }
-      it { is_expected.to have_attribute(:sell_rate, Float) }
+      it { is_expected.to have_attribute(:buy_rate, BigDecimal) }
+      it { is_expected.to have_attribute(:sell_rate, BigDecimal) }
       it { is_expected.to have_attribute(:post_date, Date) }
       it { is_expected.to have_attribute(:fetched_at, DateTime) }
     end
